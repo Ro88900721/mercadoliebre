@@ -7,10 +7,10 @@
 }
 
 /* -------------BODY--------------------- */
-body{
+body {
     background-color: #ebebeb;
 }
-  
+
 h3{
     font-size: 24px;
 }
@@ -18,6 +18,8 @@ h3{
 p{
     font-size: 12px;
 }
+
+/* ------ESTILOS HEADER------*/
 
 /* ------  HEADER  ------*/
 
@@ -121,78 +123,69 @@ h5{display: flex;
     width: 100%;
 }
 
-
-
-/* ----------- ARTICULOS ------------*/
-
-article div.articulosprincipales {
-    border-top: 1px solid #ebebeb;
-    width: 100%;
-    padding: 15px;
-    display: flex;
-    position: relative;
+/* iconos header*/
+.fa-id-card, .fa-sign-in-alt, .fa-shopping-basket {
+    color: #0044AA;
+   /* font-size: ;*/
 }
 
-.valor{
-    font-size: 18px;
-    width: 30%;
-}
 
-.porcentaje,
-.descripcion{
-    font-size: 16px;
-    font-weight: normal;
-    margin-top: 1px;
-}
+/*----------ESTILOS FORMULARIO-----------*/ 
 
-h3,
-.descripcion{
-    color: #666;
-    display: none;
-}
-
-section.banner img{
-    width: 100%;
-}
-
-main{
-    margin: 0 auto;
-    width: 90%;
-}
-
-main section article{
+main {
+    box-shadow: 0px 0px 10px rgb(100 100 100);
     background-color: #ffffff;
-    margin: 10px 0 10px 0;
-    position: relative;
-    border-radius: 15px;
-}
-  
-main section article img{
-    border-radius: 15px;
-    width: 100%;
+    margin: 20px 19px;
 }
 
-.fa-truck {
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
+
+form.form-inicio {
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: #012964;
+}
+
+form div input.agendar {
     height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
 }
 
-main section article i,
-.porcentaje{
-    color: #39b54a;
+main form.form-inicio .fas, main form.form-inicio .far {
+    font-size: 20px;
+    margin-right: 3px;
+    color: #012964;
+}
+
+div.perfil-usuario, div.categorias {
+    padding: 7px;
+}
+
+label.estilos-label {
+    font-size: 20px;
+    color: #012964;
+}
+
+form.form-inicio button {
+    background-color: #3582f5;
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 7px;
+    font-size: 16px;
+    border: none;
+}
+
+form.form-inicio button:hover {
+    background-color: #001463;
+    cursor: pointer;
 }
 
 
-/* --------  PIE  -----------*/
+
+/* -------- ESTILOS DEL FOOTER -----------*/
 
 footer {
     background-color: #ffffff;
@@ -218,6 +211,7 @@ footer article div {
 }
 
 
+
 /*-------- MEDIA-QUERYS --------- */
 
 @media (min-width: 361px) {
@@ -225,40 +219,9 @@ footer article div {
         display: block;
     }
 
-    .descripcion {
-        display: block;
-        margin-top: 30px;
-    }
-
     header nav {
         display: none; 
     }
-
-    /*Articulos*/
-    main section article {
-        /*box-shadow: 0px 0px 10px rgb(100 ,100 ,100 );*/
-        width: 45%;
-    }
-
-    main section div.productos{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    article div.articulosprincipales {
-        border-top: 1px solid #ebebeb;
-        width: 100%;
-        padding: 15px;
-        display: flex;
-        position: relative;
-        flex-wrap: wrap;
-    }
-
-    .porcentaje, .valor {
-        width: 50%;
-    }
-
 }
 
 @media (min-width: 769px){
@@ -274,10 +237,6 @@ footer article div {
 
     div.form {
         margin-left: 5px;
-    }
-
-    div.respheader p {
-        font-size: 20px;
     }
 
     header ul li a {
@@ -312,33 +271,27 @@ footer article div {
         display: none;
     }
 
-    /*Articulos*/
-    main section article:hover {
-        box-shadow: 0px 0px 10px rgb(100 ,100 ,100 );
-    }
-
-    main section div.productos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    main {
+        margin: 19px 38px;
     }
     
-    main section article {
-        width: 22%;
-    } 
- 
+    form div input.agendar {
+        width: 50%;
+    }
+
+    div.perfil-usuario, div.categorias {
+        padding: 10px 0;
+    }
 }
 
 @media (min-width: 1024px){
-    /*Header*/
     div.respheader {
         width: 183%;
     }
 
     header div.topheader p {
-        margin-top: 15px;
+        margin-top: 25px;
         font-size: 19px;
-        margin-left: 35px;
     }
 
     header nav {
@@ -350,39 +303,13 @@ footer article div {
         margin-right: 9px;
     }
 
-    header nav ul li a:hover {
-        transition: all 300ms;
-        text-decoration: underline;
-        color: #043988;
-    }
-
-    /*Articulos*/
     main {
-        padding: 30px 0;
+        margin: 30px 52px;
     }
 
-    article div.articulosprincipales h4 {
-        display: none;
-    }
+     /* ESTILOS FOOTER RESPONSICE */
 
-    article div.articulosprincipales:hover h4{
-        transition: all 500ms;
-        display: block;     
-    }
-
-    article div.articulosprincipales .fa-truck {
-        transition: all 300ms;
-        
-    }
-    article div.articulosprincipales:hover .fa-truck {
-        transition: all 300ms;
-        transform: rotate(-90deg);
-    }
-
-
-    /* ESTILOS FOOTER RESPONSIVE */
-
-    .contenedor footer {
+     .contenedor footer {
         display: flex;
         justify-content: space-around;
     }
@@ -415,20 +342,24 @@ footer article div {
         margin-right: 19px;
     }
 
-    header .form .input {
-        font-size: 25px;
+    main {
+        margin: 41px 64px;
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1920px) {
 
     header .form .submit {
         width: 5%;
-    }/*aaaaaaabbbccc*/
+    }
 
     header div.topheader p {
         margin-top: 36px;
         font-size: 30px;
+    }
+
+    .fa-search {
+        padding: 5px 7px;
     }
 
     header nav {
@@ -440,12 +371,16 @@ footer article div {
         margin-right: 33px;
     }
 
+    main {
+        margin: 45px 95px;
+    }
+
     div.input input {
         font-size: 30px;
     }
 
     .fa-search {
-        font-size: 15px;
+        font-size: 30px;
     }
 
     .fa-search:before {
