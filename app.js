@@ -13,6 +13,6 @@ app.get('/register',(req,res)=>{
     res.sendFile(path.join(__dirname, './views/register.html'))
 })
 
-app.listen(puerto, ()=>{
-    console.log ("servidor escuchando")
+app.listen(process.env.PORT)||3000,function (){
+    console.log ("servidor corriendo en el puerto 3000")
 })
