@@ -1,4 +1,4 @@
-/*Estilos Generales*/
+/*---------  Estilos Generales  -----------*/
 * {
     padding: 0;
     margin: 0;
@@ -6,11 +6,18 @@
     box-sizing: border-box;
 }
 
-/* -------------BODY--------------------- */
-body{
+/* ------------- BODY ------------- */
+body {
     background-color: #ebebeb;
 }
-  
+
+/*BIENVENID@*/
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #012964;
+}
+
 h3{
     font-size: 24px;
 }
@@ -18,6 +25,7 @@ h3{
 p{
     font-size: 12px;
 }
+
 
 /* ------  HEADER  ------*/
 
@@ -122,82 +130,53 @@ h5{display: flex;
 }
 
 
+/* ------------ ESTILOS FORMULARIO ------------- */
 
-/* ----------- ARTICULOS ------------*/
 
-article div.articulosprincipales {
-    border-top: 1px solid #ebebeb;
+div.main-login {
     width: 100%;
-    padding: 15px;
-    display: flex;
-    position: relative;
-}
-
-.valor{
-    font-size: 18px;
-    width: 30%;
-}
-
-.porcentaje,
-.descripcion{
-    font-size: 16px;
-    font-weight: normal;
-    margin-top: 1px;
-}
-
-h3,
-.descripcion{
-    color: #666;
-    display:visibility;
-}
-
-section.banner img{
-    width: 100%;
-}
-
-main{
-    margin: 0 auto;
-    width: 90%;
-}
-
-main section article{
+    margin: 30px 36px;
+    padding: 90px 9px;
     background-color: #ffffff;
-    margin: 10px 0 10px 0;
-    position: relative;
-    border-radius: 15px;
-}
-  
-main section article img{
-    border-radius: 15px;
-    width: 100%;
+    box-shadow: 0px 0px 10px rgb(100 100 100);
 }
 
-.fa-truck {
-    display: block;
+.main-login form p {
+    text-align: center;
+    padding: 8px;
+}
+
+div.main-login button {
+    background-color: #3582f5;
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 7px;
     font-size: 16px;
-    padding: 5px;
-    width: 30px;
+    border: none;
+}
+
+div.main-login button:hover {
+    background-color: #001463;
+    cursor: pointer;
+}
+
+div.main-login form p input {
     height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
 }
 
-main section article i,
-.porcentaje{
-    color: #39b54a;
+.fa-unlock, .fa-user {
+    font-size: 20px;
+    margin: 12px 7px;
+    color: #012964;
 }
 
 
-/* --------  PIE  -----------*/
+/* ---------- ESTILOS FOOTER ---------------*/
 
 footer {
     background-color: #ffffff;
     text-align: center;
-    padding: 30px 0;
+    padding: 50px 0;
     width: 90%;
     margin: 0 auto;
 }
@@ -205,7 +184,6 @@ footer {
 i.fa-credit-card, i.fa-gift, i.fa-user-shield {
     color: #1259c3;
     font-size: 2em;
-    cursor: pointer;
 }
 
 footer article {
@@ -225,40 +203,14 @@ footer article div {
         display: block;
     }
 
-    .descripcion {
-        display: block;
-        margin-top: 30px;
-    }
-
     header nav {
         display: none; 
     }
 
-    /*Articulos*/
     main section article {
         /*box-shadow: 0px 0px 10px rgb(100 ,100 ,100 );*/
         width: 45%;
     }
-
-    main section div.productos{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    article div.articulosprincipales {
-        border-top: 1px solid #ebebeb;
-        width: 100%;
-        padding: 15px;
-        display: flex;
-        position: relative;
-        flex-wrap: wrap;
-    }
-
-    .porcentaje, .valor {
-        width: 50%;
-    }
-
 }
 
 @media (min-width: 769px){
@@ -274,10 +226,6 @@ footer article div {
 
     div.form {
         margin-left: 5px;
-    }
-
-    div.respheader p {
-        font-size: 20px;
     }
 
     header ul li a {
@@ -312,21 +260,11 @@ footer article div {
         display: none;
     }
 
-    /*Articulos*/
-    main section article:hover {
-        box-shadow: 0px 0px 10px rgb(100 ,100 ,100 );
+    /*Formulario*/
+    div.main-login {
+        width: 95%;
+        margin: 19px 38px
     }
-
-    main section div.productos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    main section article {
-        width: 22%;
-    } 
- 
 }
 
 @media (min-width: 1024px){
@@ -336,9 +274,8 @@ footer article div {
     }
 
     header div.topheader p {
-        margin-top: 15px;
+        margin-top: 25px;
         font-size: 19px;
-        margin-left: 35px;
     }
 
     header nav {
@@ -350,42 +287,11 @@ footer article div {
         margin-right: 9px;
     }
 
-    header nav ul li a:hover {
-        transition: all 300ms;
-        text-decoration: underline;
-        color: #043988;
-    }
-
-    /*Articulos*/
-    main {
-        padding: 30px 0;
-    }
-
-    article div.articulosprincipales h4 {
-        display:none;
-    }
-
-    article div.articulosprincipales:hover h4{
-        transition: all 500ms;
-       display:block;     
-    }
-
-    article div.articulosprincipales .fa-truck {
-        transition: all 300ms;
-        
-    }
-    article div.articulosprincipales:hover .fa-truck {
-        transition: all 300ms;
-        transform: rotate(-90deg);
-    }
-
-
     /* ESTILOS FOOTER RESPONSIVE */
 
     .contenedorfooter {
         display: flex;
         justify-content: space-around;
-     
     }
 
     .contenedorfooter article {
@@ -404,7 +310,9 @@ footer article div {
     }
 
     header div.topheader p {
+        margin-top: 40px;
         font-size: 20px;
+        margin-left: 13px;
     }
 
     header nav {
@@ -417,19 +325,23 @@ footer article div {
     }
 
     header .form .input {
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 
-@media (min-width: 1440px) {
-
+@media (min-width: 1920px) {
+    /*Header*/
     header .form .submit {
         width: 5%;
-    }/*aaaaaaabbbccc*/
+    }
 
     header div.topheader p {
-        margin-top: 36px;
+        margin-top: 43px;
         font-size: 30px;
+    }
+
+    .fa-search {
+        padding: 5px 7px;
     }
 
     header nav {
@@ -446,7 +358,7 @@ footer article div {
     }
 
     .fa-search {
-        font-size: 15px;
+        font-size: 30px;
     }
 
     .fa-search:before {

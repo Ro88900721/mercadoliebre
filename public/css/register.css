@@ -19,7 +19,7 @@ p{
     font-size: 12px;
 }
 
-/* ------ESTILOS HEADER------*/
+
 
 /* ------  HEADER  ------*/
 
@@ -309,12 +309,12 @@ footer article div {
 
      /* ESTILOS FOOTER RESPONSICE */
 
-     .contenedor footer {
+     .contenedorfooter {
         display: flex;
         justify-content: space-around;
     }
 
-    .contenedor footer article {
+    .contenedorfooter article {
         width: 27%;
     }
 
