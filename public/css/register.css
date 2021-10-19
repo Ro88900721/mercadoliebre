@@ -125,7 +125,7 @@ h5{display: flex;
 
 /* iconos header*/
 .fa-id-card, .fa-sign-in-alt, .fa-shopping-basket {
-    color: #0044AA;
+    color: #09316d;
    /* font-size: ;*/
 }
 
@@ -147,7 +147,7 @@ form.form-inicio {
 h1 {
     text-align: center;
     padding: 20px;
-    color: #012964;
+    color: #060569;
 }
 
 form div input.agendar {
@@ -157,7 +157,7 @@ form div input.agendar {
 main form.form-inicio .fas, main form.form-inicio .far {
     font-size: 20px;
     margin-right: 3px;
-    color: #012964;
+    color: #060569;
 }
 
 div.perfil-usuario, div.categorias {
@@ -166,7 +166,7 @@ div.perfil-usuario, div.categorias {
 
 label.estilos-label {
     font-size: 20px;
-    color: #012964;
+    color: #060569;
 }
 
 form.form-inicio button {
@@ -196,7 +196,7 @@ footer {
 }
 
 i.fa-credit-card, i.fa-gift, i.fa-user-shield {
-    color: #1259c3;
+    color: #1368e7;
     font-size: 2em;
     cursor: pointer;
 }
@@ -264,7 +264,7 @@ footer article div {
     }
 
     header nav ul li a i {
-        color: #0044AA;
+        color: #060569;
     }
 
     .burger-menu {
