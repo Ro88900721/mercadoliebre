@@ -1,4 +1,4 @@
-
+/*
 const controlador={
 index: (req,res)=>{
     res.sendFile(__dirname +  '/../src/views/home.html');
